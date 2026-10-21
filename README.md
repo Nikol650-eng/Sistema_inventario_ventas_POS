@@ -1,6 +1,6 @@
 ## Cómo ejecutar el proyecto en 3 pasos
 
-### Paso 1. Clonar el repositorio
+### Paso 1. Clonar el repositorio.
 
 Abre una terminal y ejecuta:
 
@@ -8,13 +8,13 @@ Abre una terminal y ejecuta:
 git clone https://github.com/Nikol650-eng/Sistema_inventario_ventas_POS.git
 ```
 
-### Paso 2. Entrar a la carpeta del proyecto
+### Paso 2. Entrar a la carpeta del proyecto.
 
 ```bash
 cd Sistema_inventario_ventas_POS
 ```
 
-### Paso 3. Ejecutar el programa
+### Paso 3. Ejecutar el programa.
 
 Asegúrate de tener Python 3 instalado y ejecuta:
 
