@@ -1,12 +1,71 @@
-🐾 Sistema POS - Inventario y Ventas para VeterinariaSistema de Punto de Venta (POS) e Inventario diseñado para la gestión integral de una veterinaria. Desarrollado en Python con interfaz gráfica Tkinter y base de datos relacional SQLite (pos_veterinaria.db).👥 Integrantes y RolesNombreRolResponsabilidad TécnicaNikol Stephanie Díaz RugeLíder / ArquitectaArquitectura general, interfaz gráfica (Tkinter), integración de módulos y gestión del repositorio.Andrey Alirio Pinzón BaltazarDesarrollador BackendImplementación y documentación del Patrón Estructural (Facade) para la gestión de transacciones de venta.Yoni Steben Torres QuinteroDesarrollador BackendImplementación y documentación del Patrón Creacional (Singleton) para la gestión centralizada de la base de datos.🏛️ Patrones de Diseño ImplementadosEl sistema fue diseñado aplicando principios de arquitectura de software y patrones de diseño orientados a objetos:1. Patrón Creacional: Singleton (Database)Ubicación en código: Clase DatabasePropósito: Garantizar que exista una única instancia activa de conexión a la base de datos SQLite (pos_veterinaria.db) a lo largo de todo el ciclo de vida de la aplicación.Beneficio: Evita el consumo innecesario de recursos, previene bloqueos por concurrencia y centraliza la ejecución de consultas mediante métodos seguros (ejecutar y consultar).2. Patrón Estructural: Facade (VentaFacade)Ubicación en código: Clase VentaFacadePropósito: Ofrecer una interfaz unificada y simplificada a la capa de presentación (SistemaPOS) para realizar operaciones complejas de negocio.Beneficio: Oculta la complejidad del proceso de venta (verificación de stock, registro del encabezado de la venta, desglose de detalles por producto y actualización de inventario) bajo un control estricto de transacciones en la base de datos.📂 Estructura del ProyectoSistema_inventario_ventas_POS/
-├── main.py                        # Código fuente principal (Base de datos, Facade e Interfaz POS)
-├── pos_veterinaria.db             # Base de datos SQLite (se genera automáticamente)
-├── README.md                      # Documentación general del proyecto
-└── docs/                          # Documentación técnica y entregables
-    ├── E1_Plan_de_Trabajo_E2.pdf  # Cronograma y asignación de roles
-    ├── ficha_patron_singleton.md  # Documentación técnica del patrón Singleton
-    └── ficha_patron_facade.md     # Documentación técnica del patrón Facade
-⚙️ Características y FuncionalidadesGestión de Autenticación: Control de acceso seguro por usuarios y roles (Administrador / Vendedor).Gestión de Inventario (CRUD): Registro, consulta, edición y eliminación de productos y categorías veterinarias.Módulo de Ventas (POS):Búsqueda e incorporación de productos al carrito en tiempo real.Validación automática de existencias en stock.Selección de medios de pago (Efectivo, Tarjeta, Nequi/Daviplata).Generación y guardado del detalle de transacción.Historial de Ventas: Registro auditable de transacciones asociadas al usuario y cliente.🚀 Requisitos e InstalaciónRequisitos previosPython 3.8+ instalado.Biblioteca Tkinter (incluida por defecto en la distribución estándar de Python).Ejecución de la aplicaciónClona el repositorio:git clone https://github.com/Nikol650-eng/Sistema_inventario_ventas_POS.git
-Accede al directorio del proyecto:cd Sistema_inventario_ventas_POS
-Ejecuta la aplicación principal:python main.py
-(Al iniciar por primera vez, la aplicación creará automáticamente la base de datos pos_veterinaria.db con las tablas e información semilla inicial).
+Aquí tienes todo el texto plano sin ningún bloque de código ni separaciones para que puedas seleccionarlo por completo, copiarlo y pegarlo de una sola vez en el editor de GitHub:
+
+# Sistema de Inventario y Ventas - POS (Veterinaria)
+
+Sistema de punto de venta (POS) de escritorio desarrollado en Python utilizando Tkinter para la interfaz gráfica y SQLite (pos_veterinaria.db) como base de datos relacional. El software está diseñado para la gestión integral de un establecimiento veterinario, abarcando el control de inventarios, usuarios, registro de ventas transaccionales y generación de reportes.
+
+---
+
+## 👥 Equipo de Desarrollo y Roles
+
+* Nikol – Arquitectura general, interfaz gráfica (Tkinter), integración de módulos y gestión del repositorio.
+* Andrey Alirio Pinzón Baltazar – Implementación y documentación del Patrón Estructural (Facade - VentaFacade).
+
+
+* Yoni Steben Torres Quintero – Implementación y documentación del Patrón Creacional (Singleton - Database).
+
+
+
+---
+
+## 🏛️ Patrones de Diseño Implementados
+
+El proyecto aplica rigurosamente principios de diseño de software orientados a objetos y patrones GoF (Gang of Four), reflejados directamente en el código fuente (main.py):
+
+### 1. Patrón Creacional: Singleton (Database)
+
+* Propósito: Garantizar que exista una única instancia de conexión a la base de datos pos_veterinaria.db durante toda la ejecución del programa.
+
+
+* Implementación: Se gestiona mediante el método especial **new** en la clase Database, centralizando el acceso a los cursores y previniendo bloqueos por múltiples conexiones concurrentes.
+
+
+
+### 2. Patrón Estructural: Facade (VentaFacade)
+
+* Propósito: Proveer una interfaz unificada y simplificada para un subsistema complejo de transacciones comerciales.
+
+
+* Implementación: La clase VentaFacade encapsula toda la lógica crítica al registrar una venta (cálculo de totales, validación de stock disponible, actualización del inventario de productos, registro maestro de la venta y almacenamiento detallado de los ítems), manejando de forma segura las transacciones (commit / rollback) fuera de la interfaz gráfica.
+
+
+
+---
+
+## 🚀 Estructura del Proyecto
+
+Sistema_inventario_ventas_POS/
+│
+├── main.py                  # Código fuente principal de la aplicación
+├── pos_veterinaria.db       # Base de datos SQLite integrada
+├── README.md                # Documentación general del repositorio
+└── docs/                    # Carpeta de documentación académica (Entregables)
+├── ficha_patron_facade.md     # Ficha técnica de Andrey (Facade)
+└── ficha_patron_singleton.md  # Ficha técnica de Yoni (Singleton)
+
+---
+
+## 💻 Requisitos y Ejecución
+
+1. Requisitos previos: Tener instalado Python (versión 3.x recomendada).
+2. Clonar el repositorio o descargar el código:
+git clone [https://github.com/Nikol650-eng/Sistema_inventario_ventas_POS.git](https://www.google.com/search?q=https://github.com/Nikol650-eng/Sistema_inventario_ventas_POS.git)
+3. Ejecutar la aplicación:
+python main.py
+
+### 🔑 Credenciales de Acceso Inicial
+
+* Usuario: admin
+
+
+* Contraseña: admin123
