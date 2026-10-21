@@ -1,4 +1,4 @@
-Aquí tienes todo el texto plano sin ningún bloque de código ni separaciones para que puedas seleccionarlo por completo, copiarlo y pegarlo de una sola vez en el editor de GitHub:
+
 
 # Sistema de Inventario y Ventas - POS (Veterinaria)
 
@@ -6,7 +6,7 @@ Sistema de punto de venta (POS) de escritorio desarrollado en Python utilizando 
 
 ---
 
-## 👥 Equipo de Desarrollo y Roles
+## Equipo de Desarrollo y Roles
 
 * Nikol – Arquitectura general, interfaz gráfica (Tkinter), integración de módulos y gestión del repositorio.
 * Andrey Alirio Pinzón Baltazar – Implementación y documentación del Patrón Estructural (Facade - VentaFacade).
@@ -18,7 +18,7 @@ Sistema de punto de venta (POS) de escritorio desarrollado en Python utilizando 
 
 ---
 
-## 🏛️ Patrones de Diseño Implementados
+## Patrones de Diseño Implementados
 
 El proyecto aplica rigurosamente principios de diseño de software orientados a objetos y patrones GoF (Gang of Four), reflejados directamente en el código fuente (main.py):
 
@@ -42,7 +42,7 @@ El proyecto aplica rigurosamente principios de diseño de software orientados a 
 
 ---
 
-## 🚀 Estructura del Proyecto
+## Estructura del Proyecto
 
 Sistema_inventario_ventas_POS/
 │
@@ -55,7 +55,7 @@ Sistema_inventario_ventas_POS/
 
 ---
 
-## 💻 Requisitos y Ejecución
+## Requisitos y Ejecución
 
 1. Requisitos previos: Tener instalado Python (versión 3.x recomendada).
 2. Clonar el repositorio o descargar el código:
@@ -63,7 +63,7 @@ git clone [https://github.com/Nikol650-eng/Sistema_inventario_ventas_POS.git](ht
 3. Ejecutar la aplicación:
 python main.py
 
-### 🔑 Credenciales de Acceso Inicial
+### Credenciales de Acceso Inicial
 
 * Usuario: admin
 
