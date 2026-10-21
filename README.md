@@ -43,7 +43,6 @@ El proyecto aplica rigurosamente principios de diseño de software orientados a 
 ---
 
 ## Estructura del Proyecto
-
 ```text
 Sistema_inventario_ventas_POS/
 │
@@ -53,16 +52,18 @@ Sistema_inventario_ventas_POS/
 └── docs/                    # Carpeta de documentación académica (Entregables)
     ├── ficha_patron_facade.md     # Ficha técnica de Andrey (Facade)
     └── ficha_patron_singleton.md  # Ficha técnica de Yoni (Singleton)
-
+```
 
 
 ---
-
 ## Requisitos y Ejecución
 
-1. Requisitos previos: Tener instalado Python (versión 3.x recomendada).
-2. Clonar el repositorio o descargar el código:
-git clone [https://github.com/Nikol650-eng/Sistema_inventario_ventas_POS.git](https://www.google.com/search?q=https://github.com/Nikol650-eng/Sistema_inventario_ventas_POS.git)
+**1. Requisitos previos:** 
+Tener instalado Python (versión 3.x recomendada).
+
+**2. Clonar el repositorio:**
+git clone https://github.com/Nikol650-eng/Sistema_inventario_ventas_POS.git
+
 3. Ejecutar la aplicación:
 python main.py
 
