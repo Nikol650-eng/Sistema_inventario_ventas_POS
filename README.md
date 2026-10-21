@@ -53,6 +53,9 @@ Sistema_inventario_ventas_POS/
 └── docs/                    # Carpeta de documentación académica (Entregables)
     ├── ficha_patron_facade.md     # Ficha técnica de Andrey (Facade)
     └── ficha_patron_singleton.md  # Ficha técnica de Yoni (Singleton)
+
+
+
 ---
 
 ## Requisitos y Ejecución
