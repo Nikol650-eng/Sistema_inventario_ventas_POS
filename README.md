@@ -44,15 +44,15 @@ El proyecto aplica rigurosamente principios de diseño de software orientados a 
 
 ## Estructura del Proyecto
 
+```text
 Sistema_inventario_ventas_POS/
 │
 ├── main.py                  # Código fuente principal de la aplicación
 ├── pos_veterinaria.db       # Base de datos SQLite integrada
 ├── README.md                # Documentación general del repositorio
 └── docs/                    # Carpeta de documentación académica (Entregables)
-├── ficha_patron_facade.md     # Ficha técnica de Andrey (Facade)
-└── ficha_patron_singleton.md  # Ficha técnica de Yoni (Singleton)
-
+    ├── ficha_patron_facade.md     # Ficha técnica de Andrey (Facade)
+    └── ficha_patron_singleton.md  # Ficha técnica de Yoni (Singleton)
 ---
 
 ## Requisitos y Ejecución
