@@ -10,7 +10,7 @@ El sistema está orientado a la gestión de productos, el control del inventario
 
 | Integrante | Responsabilidades |
 |---|---|
-| Nikol | Arquitectura general, desarrollo de la interfaz gráfica con Tkinter, integración de módulos y gestión del repositorio. |
+| Cielo Nikol Solarte Lopez | Arquitectura general, desarrollo de la interfaz gráfica con Tkinter, integración de módulos y gestión del repositorio. |
 | Andrey Alirio Pinzón Baltazar | Implementación y documentación del patrón estructural Facade mediante la clase `VentaFacade`. |
 | Yoni Steben Torres Quintero | Implementación y documentación del patrón creacional Singleton mediante la clase `Database`. |
 
